@@ -96,6 +96,34 @@ CORS_ORIGINS_RAW=http://localhost:3000
 
 フロントエンドをVercelへデプロイした後は、`CORS_ORIGINS_RAW` にVercel URLをカンマ区切りで追加する。
 
+## Vercel Frontend Deploy
+
+Vercel では `frontend/` だけを Next.js アプリとしてデプロイする。バックエンドURLは build 時に `NEXT_PUBLIC_API_BASE_URL` として埋め込まれるため、Render のURLを先に用意しておく。
+
+| 項目 | 値 |
+|---|---|
+| Repository | `https://github.com/nonooktk/projectzero_phase1test2` |
+| Branch | `main` |
+| Root Directory | `frontend` |
+| Framework Preset | `Next.js` |
+| Build Command | `npm run build` |
+| Output Directory | `.next` |
+| Install Command | `npm install` |
+
+Vercel の環境変数には以下を設定する。
+
+```bash
+NEXT_PUBLIC_API_BASE_URL=https://<RenderのサービスURL>
+```
+
+Vercel のデプロイURLが発行されたら、Render 側の `CORS_ORIGINS_RAW` を以下のように更新して、Render を再デプロイする。
+
+```bash
+CORS_ORIGINS_RAW=http://localhost:3000,https://<VercelのURL>
+```
+
+反映後、Vercel の画面からテンプレート入力 → 分析スタートを実行し、API通信が通ることを確認する。
+
 ## E2E確認
 
 画面から以下のような入力で分析を実行する。
