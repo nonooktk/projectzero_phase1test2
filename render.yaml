@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: projectzero-phase1-backend
+    runtime: python
+    plan: free
+    autoDeploy: true
+    buildCommand: pip install --upgrade pip && pip install -e backend
+    startCommand: python -m uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4o-mini
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: CORS_ORIGINS_RAW
+        value: http://localhost:3000

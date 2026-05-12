@@ -1,6 +1,6 @@
 # Tech0 Search
 
-Streamlit MVP を Next.js + FastAPI + Supabase + ChromaDB + NetworkX + OpenAI 構成へ移植した開発環境向けアプリ。今回のターゲットは **ローカル開発環境で E2E が意図どおり動作すること**であり、Vercel / Render へのデプロイは実施しない。
+Streamlit MVP を Next.js + FastAPI + Supabase + ChromaDB + NetworkX + OpenAI 構成へ移植したアプリ。Phase 1 ではローカル開発環境で E2E を通し、その後 Render / Vercel への暫定デプロイへ進む。
 
 ## 現在の到達点
 
@@ -69,6 +69,32 @@ docker compose up
 ```
 
 初回は Python / Node 依存関係と SentenceTransformer モデルの取得で時間がかかる。
+
+## Render Backend Deploy
+
+Render の New Web Service では、リポジトリルートをサービスのRoot Directoryとして使う。`backend/` をRoot Directoryにすると、実行時にルート直下の `data/` が見えなくなるためである。
+
+| 項目 | 値 |
+|---|---|
+| Repository | `https://github.com/nonooktk/projectzero_phase1test2` |
+| Branch | `main` |
+| Root Directory | 空欄 |
+| Runtime | `Python 3` |
+| Build Command | `pip install --upgrade pip && pip install -e backend` |
+| Start Command | `python -m uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT` |
+| Health Check Path | `/api/v1/health` |
+
+Render の環境変数には以下を設定する。
+
+```bash
+OPENAI_API_KEY=...
+OPENAI_MODEL=gpt-4o-mini
+SUPABASE_URL=...
+SUPABASE_SERVICE_ROLE_KEY=...
+CORS_ORIGINS_RAW=http://localhost:3000
+```
+
+フロントエンドをVercelへデプロイした後は、`CORS_ORIGINS_RAW` にVercel URLをカンマ区切りで追加する。
 
 ## E2E確認
 
