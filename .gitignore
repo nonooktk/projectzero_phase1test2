@@ -1,0 +1,59 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.claude/
+
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+!**/.env.example
+!**/.env.local.example
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Node / Next.js
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+out/
+frontend/out/
+dist/
+build/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local databases / vector stores / runtime artifacts
+*.db
+*.sqlite
+*.sqlite3
+chroma/
+chroma_db/
+.chroma/
+storage/
+tmp/
+temp/
+
+# Logs
+*.log
+logs/
+
+# Supabase local runtime
+supabase/.branches/
+supabase/.temp/

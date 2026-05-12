@@ -1,0 +1,16 @@
+# 環境変数・APIキー
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# ChromaDB
+chroma_db/
+*.chroma
+
+# Mac
+.DS_Store

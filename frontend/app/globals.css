@@ -1,0 +1,550 @@
+:root {
+  color: #e7f2f5;
+  background: #071014;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(rgba(77, 220, 232, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(77, 220, 232, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 20% 0%, rgba(21, 170, 132, 0.16), transparent 32%),
+    radial-gradient(circle at 88% 12%, rgba(232, 190, 77, 0.12), transparent 28%),
+    linear-gradient(135deg, #071014 0%, #0c1820 48%, #101314 100%);
+  background-size: 34px 34px, 34px 34px, auto, auto, auto;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 40px 24px;
+}
+
+.page::before {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  background:
+    linear-gradient(115deg, transparent 0 42%, rgba(77, 220, 232, 0.1) 42% 42.2%, transparent 42.2% 100%),
+    linear-gradient(68deg, transparent 0 66%, rgba(232, 190, 77, 0.11) 66% 66.2%, transparent 66.2% 100%);
+}
+
+.shell {
+  position: relative;
+  z-index: 1;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.appHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(116, 239, 255, 0.26);
+  padding-bottom: 22px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  margin-bottom: 10px;
+  color: #74efff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 44px;
+  line-height: 1;
+  text-shadow: 0 0 24px rgba(116, 239, 255, 0.36);
+}
+
+.appHeader p {
+  max-width: 620px;
+  margin: 12px 0 0;
+  color: #a9bdc4;
+  line-height: 1.7;
+}
+
+.signalRail {
+  display: grid;
+  grid-template-columns: repeat(4, 24px);
+  gap: 8px;
+  min-width: 120px;
+  justify-content: end;
+}
+
+.signalRail span {
+  height: 72px;
+  border: 1px solid rgba(116, 239, 255, 0.32);
+  background: linear-gradient(180deg, #74efff, #15aa84 58%, transparent 58%);
+  box-shadow: 0 0 18px rgba(116, 239, 255, 0.22);
+}
+
+.signalRail span:nth-child(2) {
+  background: linear-gradient(180deg, transparent 24%, #e8be4d 24% 100%);
+}
+
+.signalRail span:nth-child(3) {
+  background: linear-gradient(180deg, transparent 42%, #74efff 42% 100%);
+}
+
+.signalRail span:nth-child(4) {
+  background: linear-gradient(180deg, transparent 12%, #ef6f6c 12% 100%);
+}
+
+.form,
+.result,
+.progressPanel {
+  position: relative;
+  border: 1px solid rgba(116, 239, 255, 0.22);
+  border-radius: 8px;
+  background: rgba(7, 16, 20, 0.82);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(18px);
+}
+
+.form::before,
+.result::before,
+.progressPanel::before {
+  position: absolute;
+  top: -1px;
+  left: 18px;
+  width: 120px;
+  height: 2px;
+  content: "";
+  background: linear-gradient(90deg, #74efff, #15aa84);
+  box-shadow: 0 0 16px rgba(116, 239, 255, 0.75);
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+}
+
+.templateBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid rgba(116, 239, 255, 0.14);
+  border-radius: 8px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.templateBar span {
+  color: #74efff;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.templateBar div {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.templateButton {
+  border: 1px solid rgba(116, 239, 255, 0.3);
+  border-radius: 8px;
+  padding: 8px 11px;
+  background: rgba(116, 239, 255, 0.08);
+  color: #dffaff;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.templateButton:hover {
+  border-color: #74efff;
+  background: rgba(116, 239, 255, 0.16);
+  box-shadow: 0 0 18px rgba(116, 239, 255, 0.18);
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  color: #d5e4e8;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border: 1px solid rgba(116, 239, 255, 0.24);
+  border-radius: 8px;
+  padding: 13px 14px;
+  background: rgba(3, 9, 12, 0.76);
+  color: #f7fbfc;
+  outline: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #74efff;
+  background: rgba(5, 18, 23, 0.92);
+  box-shadow: 0 0 0 3px rgba(116, 239, 255, 0.14);
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #6f858d;
+}
+
+.field textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.button {
+  width: fit-content;
+  border: 1px solid rgba(116, 239, 255, 0.48);
+  border-radius: 8px;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #74efff 0%, #15aa84 100%);
+  color: #031013;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 0 0 24px rgba(116, 239, 255, 0.28);
+}
+
+.button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.result,
+.progressPanel {
+  margin-top: 24px;
+  padding: 20px;
+}
+
+.progressHeader,
+.resultHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.progressHeader {
+  margin-bottom: 14px;
+}
+
+.progressHeader h2,
+.resultHeader h2 {
+  margin: 0 0 4px;
+  color: #ffffff;
+}
+
+.progressTrack {
+  display: grid;
+  gap: 10px;
+}
+
+.progressStep {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 12px;
+  border: 1px solid rgba(116, 239, 255, 0.13);
+  border-radius: 8px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.progressStep p {
+  margin: 4px 0 0;
+  color: #91a6ad;
+  line-height: 1.6;
+}
+
+.progressDot {
+  width: 12px;
+  height: 12px;
+  margin-top: 4px;
+  border-radius: 999px;
+  background: #4c5f67;
+}
+
+.progressStep.done .progressDot {
+  background: #15aa84;
+}
+
+.progressStep.active {
+  border-color: rgba(116, 239, 255, 0.64);
+  background: rgba(116, 239, 255, 0.08);
+}
+
+.progressStep.active .progressDot {
+  background: #74efff;
+  box-shadow: 0 0 0 6px rgba(116, 239, 255, 0.13), 0 0 18px rgba(116, 239, 255, 0.72);
+}
+
+.muted {
+  color: #91a6ad;
+}
+
+.statusBadge,
+.nodeChip {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(116, 239, 255, 0.35);
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: rgba(116, 239, 255, 0.1);
+  color: #74efff;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.verdict {
+  display: grid;
+  gap: 6px;
+  margin: 20px 0;
+  border-left: 4px solid #15aa84;
+  padding: 12px 16px;
+  background: linear-gradient(90deg, rgba(21, 170, 132, 0.18), rgba(116, 239, 255, 0.04));
+}
+
+.verdict span {
+  color: #73e6bd;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.verdict strong {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.summary {
+  color: #d5e4e8;
+  line-height: 1.8;
+}
+
+h3 {
+  margin-top: 28px;
+  color: #ffffff;
+}
+
+.scoreGrid,
+.proposalList,
+.evidenceList,
+.relatedPanel {
+  display: grid;
+  gap: 12px;
+}
+
+.scoreGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.scoreCard,
+.proposal,
+.evidence,
+.relatedNode {
+  border: 1px solid rgba(116, 239, 255, 0.16);
+  border-radius: 8px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.scoreCard,
+.proposal {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.scoreTop,
+.proposalMeta,
+.evidence div,
+.nodeList,
+.relatedNode div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.scoreTop {
+  justify-content: space-between;
+}
+
+.scoreTop strong {
+  color: #e8be4d;
+  font-size: 28px;
+  text-shadow: 0 0 18px rgba(232, 190, 77, 0.36);
+}
+
+.scoreCard p,
+.proposal p,
+.evidence p {
+  color: #c8d8dd;
+  line-height: 1.7;
+}
+
+.proposal h4 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.proposalMeta span,
+.evidence span,
+.relatedNode span {
+  border: 1px solid rgba(145, 166, 173, 0.22);
+  border-radius: 6px;
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #d5e4e8;
+  font-size: 13px;
+}
+
+.relatedPanel {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.graphPanel {
+  display: grid;
+  gap: 12px;
+}
+
+.graphCanvas {
+  width: 100%;
+  min-height: 320px;
+  border: 1px solid rgba(116, 239, 255, 0.2);
+  border-radius: 8px;
+  background:
+    linear-gradient(rgba(116, 239, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(116, 239, 255, 0.06) 1px, transparent 1px),
+    rgba(3, 9, 12, 0.7);
+  background-size: 28px 28px;
+}
+
+.graphEdge {
+  stroke: #74efff;
+  stroke-opacity: 0.46;
+  stroke-width: 2;
+}
+
+.graphEdgeLabel {
+  fill: #e8be4d;
+  font-size: 11px;
+  font-weight: 800;
+  paint-order: stroke;
+  stroke: #071014;
+  stroke-width: 5px;
+  text-anchor: middle;
+}
+
+.graphNode circle {
+  fill: rgba(116, 239, 255, 0.16);
+  stroke: #74efff;
+  stroke-width: 2;
+  filter: drop-shadow(0 0 8px rgba(116, 239, 255, 0.55));
+}
+
+.graphNode.related circle {
+  fill: rgba(232, 190, 77, 0.15);
+  stroke: #e8be4d;
+}
+
+.graphNodeLabel,
+.graphNodeType {
+  fill: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+.graphNodeType {
+  fill: #a9bdc4;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.relatedNode {
+  border-left: 4px solid #74efff;
+}
+
+.relatedNode p {
+  margin: 8px 0 0;
+  color: #91a6ad;
+}
+
+.evidence small {
+  color: #91a6ad;
+}
+
+.error {
+  margin-top: 24px;
+  border: 1px solid rgba(239, 111, 108, 0.42);
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: rgba(239, 111, 108, 0.12);
+  color: #ffb3b1;
+}
+
+@media (max-width: 860px) {
+  .page {
+    padding: 24px 16px;
+  }
+
+  .appHeader,
+  .resultHeader,
+  .progressHeader {
+    display: grid;
+  }
+
+  .templateBar {
+    display: grid;
+  }
+
+  .templateBar div {
+    justify-content: flex-start;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .signalRail {
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+  }
+
+  .signalRail span {
+    height: 26px;
+  }
+
+  .scoreGrid,
+  .relatedPanel {
+    grid-template-columns: 1fr;
+  }
+}

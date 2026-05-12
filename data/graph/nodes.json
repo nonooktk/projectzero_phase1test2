@@ -1,0 +1,17 @@
+[
+  {"id": "tech_001", "label": "バイオ合成CoQ10製造技術", "type": "technology"},
+  {"id": "tech_004", "label": "フレキシブル薄膜太陽電池技術", "type": "technology"},
+  {"id": "tech_006", "label": "医療用生体適合性シリコーン材料", "type": "technology"},
+  {"id": "tech_016", "label": "燃料電池・水電解用イオン交換膜技術", "type": "technology"},
+  {"id": "proj_001", "label": "ビルエネルギー管理（BEMS）事業", "type": "past_project"},
+  {"id": "proj_003", "label": "機能性素材D2Cサプリメント事業", "type": "past_project"},
+  {"id": "proj_008", "label": "ウェアラブル向けバイオセンサー部材事業", "type": "past_project"},
+  {"id": "person_001", "label": "田村 浩二（エネルギーソリューション事業部）", "type": "person"},
+  {"id": "person_002", "label": "中島 恵子（バイオ事業本部 CoQ10事業部）", "type": "person"},
+  {"id": "person_003", "label": "西村 大輔（事業開発本部 新規事業推進室）", "type": "person"},
+  {"id": "person_006", "label": "橋本 美香（品質保証・薬事本部）", "type": "person"},
+  {"id": "person_018", "label": "小林 めぐみ（医療機器事業部）", "type": "person"},
+  {"id": "market_bems", "label": "BEMS市場", "type": "market"},
+  {"id": "market_medical", "label": "医療機器市場", "type": "market"},
+  {"id": "market_wearable", "label": "ウェアラブル市場", "type": "market"}
+]

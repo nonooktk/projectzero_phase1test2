@@ -1,0 +1,18 @@
+[
+  {"source": "person_001", "target": "proj_001", "relation": "過去に担当"},
+  {"source": "person_001", "target": "market_bems", "relation": "営業ネットワークあり"},
+  {"source": "person_002", "target": "tech_001", "relation": "担当できる"},
+  {"source": "person_002", "target": "proj_003", "relation": "関連する"},
+  {"source": "person_003", "target": "proj_008", "relation": "過去に担当"},
+  {"source": "person_003", "target": "market_wearable", "relation": "市場調査経験あり"},
+  {"source": "person_006", "target": "market_medical", "relation": "薬事サポート可能"},
+  {"source": "person_006", "target": "tech_006", "relation": "応用できる"},
+  {"source": "person_018", "target": "tech_006", "relation": "担当できる"},
+  {"source": "person_018", "target": "market_medical", "relation": "過去に担当"},
+  {"source": "tech_004", "target": "market_bems", "relation": "応用できる"},
+  {"source": "tech_016", "target": "market_bems", "relation": "応用できる"},
+  {"source": "tech_006", "target": "market_medical", "relation": "応用できる"},
+  {"source": "tech_001", "target": "market_medical", "relation": "応用できる"},
+  {"source": "proj_001", "target": "market_bems", "relation": "関連する"},
+  {"source": "proj_008", "target": "market_wearable", "relation": "関連する"}
+]

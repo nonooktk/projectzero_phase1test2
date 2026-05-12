@@ -1,0 +1,1496 @@
+[
+  {
+    "id": "tech_001",
+    "content": "バイオ合成CoQ10（コエンザイムQ10）製造技術。独自の酵母発酵法により世界最高純度99.9%を達成、世界シェア約30%を誇る。医薬品・食品・化粧品向けに年産300トン超の供給実績あり。",
+    "category": "technology",
+    "name": "バイオ合成CoQ10製造技術",
+    "tags": [
+      "CoQ10",
+      "発酵",
+      "医薬品原料",
+      "バイオ",
+      "機能性素材"
+    ],
+    "patents": [
+      "JP2008-234567",
+      "JP2015-089012"
+    ],
+    "maturity": "高"
+  },
+  {
+    "id": "tech_002",
+    "content": "PHBH（ポリヒドロキシアルカノエート）生分解性プラスチック製造技術。微生物発酵由来の完全生分解素材で、海洋環境でも6ヶ月以内に分解。石油由来プラスチックと同等の成形性を持ち、容器・フィルム・繊維に展開可能。",
+    "category": "technology",
+    "name": "PHBH生分解性プラスチック製造技術",
+    "tags": [
+      "PHBH",
+      "生分解",
+      "バイオプラスチック",
+      "脱炭素",
+      "海洋分解",
+      "循環型"
+    ],
+    "patents": [
+      "JP2012-456789",
+      "JP2019-123456"
+    ],
+    "maturity": "高"
+  },
+  {
+    "id": "tech_003",
+    "content": "発泡ポリプロピレン（EPP）精密成形技術。独自のビーズ発泡法により密度0.015〜0.3g/cm³の幅広い設計が可能。自動車バンパーコア・ヘルメットライナー・梱包材での量産実績30年超。軽量化比率は同体積のPP比約80%削減。",
+    "category": "technology",
+    "name": "発泡ポリプロピレン（EPP）成形技術",
+    "tags": [
+      "EPP",
+      "発泡材料",
+      "軽量化",
+      "自動車",
+      "緩衝材",
+      "成形"
+    ],
+    "patents": [
+      "JP1998-112233",
+      "JP2010-334455"
+    ],
+    "maturity": "高"
+  },
+  {
+    "id": "tech_004",
+    "content": "フレキシブルアモルファスシリコン薄膜太陽電池技術。曲面・軽量基板への成膜が可能で、建材一体型（BIPV）や車両搭載に対応。変換効率は結晶シリコン比劣るが、弱光性能・高温特性に優れ屋外常設用途で競争力。",
+    "category": "technology",
+    "name": "フレキシブル薄膜太陽電池技術",
+    "tags": [
+      "太陽電池",
+      "BIPV",
+      "フレキシブル",
+      "再生可能エネルギー",
+      "薄膜"
+    ],
+    "patents": [
+      "JP2005-778899",
+      "JP2017-665544"
+    ],
+    "maturity": "高"
+  },
+  {
+    "id": "tech_005",
+    "content": "高純度グルタチオン発酵生産技術。酵母の代謝経路改変により細胞内グルタチオン蓄積量を従来比3倍に向上。医薬品グレード（99%以上）での年産50トンの生産体制を確立。美白・抗酸化目的で化粧品・サプリメント市場での需要が急増中。",
+    "category": "technology",
+    "name": "グルタチオン発酵生産技術",
+    "tags": [
+      "グルタチオン",
+      "発酵",
+      "化粧品原料",
+      "医薬品",
+      "バイオ",
+      "抗酸化"
+    ],
+    "patents": [
+      "JP2011-223344"
+    ],
+    "maturity": "高"
+  },
+  {
+    "id": "tech_006",
+    "content": "医療用生体適合性シリコーン材料技術。ISO 10993準拠の生体適合性試験を全グレード取得済み。長期埋植（10年以上）対応グレードから短期接触グレードまで12品種を展開。人工関節・カテーテル・皮膚接触型デバイスで採用実績。",
+    "category": "technology",
+    "name": "医療用生体適合性シリコーン材料",
+    "tags": [
+      "シリコーン",
+      "医療機器",
+      "生体適合性",
+      "埋植",
+      "カテーテル"
+    ],
+    "patents": [
+      "JP2009-556677",
+      "JP2020-112233"
+    ],
+    "maturity": "高"
+  },
+  {
+    "id": "tech_007",
+    "content": "高分子量ポリアクリル酸（PAA）合成・架橋技術。自重の500〜1000倍の吸水性能を実現する高吸水性ポリマー（SAP）の製造技術。紙おむつ・農業用保水材・止水材に展開。生産コストは競合比15%低位を維持。",
+    "category": "technology",
+    "name": "高吸水性ポリアクリル酸（SAP）技術",
+    "tags": [
+      "SAP",
+      "高吸水性ポリマー",
+      "ポリアクリル酸",
+      "衛生材料",
+      "農業"
+    ],
+    "patents": [
+      "JP2003-445566"
+    ],
+    "maturity": "高"
+  },
+  {
+    "id": "tech_008",
+    "content": "変性エポキシ・シリコーンハイブリッド接着剤技術。耐熱温度200℃・耐候性20年以上を実現する高機能接着剤。太陽電池モジュールの封止材や建材の外壁シーリングで高シェア。VOC排出量を業界標準比90%削減した環境対応品。",
+    "category": "technology",
+    "name": "高機能ハイブリッド接着剤・シーリング技術",
+    "tags": [
+      "接着剤",
+      "シーリング",
+      "耐熱",
+      "建材",
+      "太陽電池封止",
+      "低VOC"
+    ],
+    "patents": [
+      "JP2007-334455",
+      "JP2016-778899"
+    ],
+    "maturity": "高"
+  },
+  {
+    "id": "tech_009",
+    "content": "農業用生分解性マルチフィルム技術。PHBH系素材を活用し、作物収穫後に土壌中で完全分解（90日以内）するフィルム。従来のポリエチレンマルチ回収不要で農家の省力化に寄与。耐候性・雑草抑制効果はPEと同等水準を達成。",
+    "category": "technology",
+    "name": "農業用生分解性マルチフィルム技術",
+    "tags": [
+      "農業",
+      "生分解",
+      "マルチフィルム",
+      "PHBH",
+      "土壌分解",
+      "省力化"
+    ],
+    "patents": [
+      "JP2018-990011"
+    ],
+    "maturity": "中"
+  },
+  {
+    "id": "tech_010",
+    "content": "リチウムイオン電池用SBR系バインダー技術。電極スラリーの分散安定性と塗工適性を両立した水系バインダー。負極用バインダーとして国内二次電池メーカー3社に採用実績。急速充電時のサイクル特性改善で電池寿命20%向上に寄与。",
+    "category": "technology",
+    "name": "リチウムイオン電池用バインダー技術",
+    "tags": [
+      "LiB",
+      "電池材料",
+      "バインダー",
+      "EV",
+      "エネルギー貯蔵"
+    ],
+    "patents": [
+      "JP2014-112233",
+      "JP2021-556677"
+    ],
+    "maturity": "高"
+  },
+  {
+    "id": "tech_011",
+    "content": "高耐熱ポリイミドフィルム製造技術。耐熱温度400℃超・線膨張係数3ppm/Kという極めて高い熱安定性を実現。半導体製造工程のプロセステープ・宇宙機器用フレキシブル回路に採用。フィルム厚み5μmの極薄品製造に成功。",
+    "category": "technology",
+    "name": "高耐熱ポリイミドフィルム技術",
+    "tags": [
+      "ポリイミド",
+      "電子材料",
+      "半導体",
+      "耐熱フィルム",
+      "宇宙"
+    ],
+    "patents": [
+      "JP2006-223344",
+      "JP2019-889900"
+    ],
+    "maturity": "高"
+  },
+  {
+    "id": "tech_012",
+    "content": "タンパク質工学・抗体医薬製造プラットフォーム技術。CHO細胞を用いた抗体医薬品の受託製造（CMO）技術。細胞培養最適化により生産性を従来比2.5倍に向上。GMP認定施設でのバイオシミラー製造受託実績3品目。",
+    "category": "technology",
+    "name": "抗体医薬・バイオシミラー製造プラットフォーム",
+    "tags": [
+      "抗体医薬",
+      "バイオシミラー",
+      "CMO",
+      "GMP",
+      "バイオ医薬品",
+      "CHO細胞"
+    ],
+    "patents": [
+      "JP2016-334455"
+    ],
+    "maturity": "中"
+  },
+  {
+    "id": "tech_013",
+    "content": "膜分離精製技術（限外ろ過・ナノろ過）。医薬品・食品・化学品の高純度精製に適用。従来の蒸留・再結晶工程に比べエネルギー消費80%削減。タンパク質製剤の精製で収率95%以上を達成。自社設計モジュールで精製コスト30%低減。",
+    "category": "technology",
+    "name": "膜分離精製技術",
+    "tags": [
+      "膜分離",
+      "精製",
+      "医薬品",
+      "省エネ",
+      "バイオプロセス"
+    ],
+    "patents": [
+      "JP2010-667788"
+    ],
+    "maturity": "高"
+  },
+  {
+    "id": "tech_014",
+    "content": "活性型ビタミンB6（ピリドキサール-5-リン酸）精密合成技術。多段階合成の最終工程を独自触媒で2工程に短縮、収率85%を達成。医薬品グレードの品質規格をすべてクリア。神経疾患治療薬の原薬として国内製薬3社に長期供給中。",
+    "category": "technology",
+    "name": "活性型ビタミンB6精密合成技術",
+    "tags": [
+      "ビタミンB6",
+      "医薬品原料",
+      "精密合成",
+      "神経疾患",
+      "原薬"
+    ],
+    "patents": [
+      "JP2004-112233"
+    ],
+    "maturity": "高"
+  },
+  {
+    "id": "tech_015",
+    "content": "ナノセルロース（CNC/CNF）複合材料技術。木材パルプから製造するナノセルロースを高分子マトリクスに分散させ、軽量・高剛性複合材を実現。樹脂比強度でカーボンファイバー比60%のコストで同等性能。自動車内装・包装材での実用化研究中。",
+    "category": "technology",
+    "name": "ナノセルロース複合材料技術",
+    "tags": [
+      "ナノセルロース",
+      "軽量材料",
+      "複合材",
+      "バイオマス",
+      "自動車"
+    ],
+    "patents": [
+      "JP2020-334455"
+    ],
+    "maturity": "中"
+  },
+  {
+    "id": "tech_016",
+    "content": "燃料電池用フッ素系イオン交換膜技術。プロトン伝導性と化学的耐久性を両立した電解質膜。水電解槽（グリーン水素製造）にも適用可能な多用途設計。膜抵抗値を業界標準比25%低減し発電効率向上に寄与。",
+    "category": "technology",
+    "name": "燃料電池・水電解用イオン交換膜技術",
+    "tags": [
+      "燃料電池",
+      "水素",
+      "イオン交換膜",
+      "グリーン水素",
+      "電解"
+    ],
+    "patents": [
+      "JP2013-556677",
+      "JP2022-112233"
+    ],
+    "maturity": "中"
+  },
+  {
+    "id": "tech_017",
+    "content": "医薬品原薬中間体精密合成技術（GMP対応）。不斉合成・酵素触媒反応を組み合わせた高光学純度中間体の製造。ee値99%超の光学活性体合成に対応。FDA査察クリア済みのGMP製造設備で年産5トン規模の受託合成実績。",
+    "category": "technology",
+    "name": "医薬品原薬中間体精密合成技術",
+    "tags": [
+      "医薬品",
+      "GMP",
+      "不斉合成",
+      "光学活性",
+      "原薬中間体",
+      "CDMO"
+    ],
+    "patents": [
+      "JP2008-778899"
+    ],
+    "maturity": "高"
+  },
+  {
+    "id": "tech_018",
+    "content": "大型バイオリアクター最適化・発酵制御技術。100kLスケールでの溶存酸素・pH・栄養塩の統合制御システム。AIを用いたフィードバック制御で発酵収率を従来比1.4倍に向上。CoQ10・グルタチオン・有機酸など多品種への適用実績。",
+    "category": "technology",
+    "name": "大型バイオリアクター・発酵制御技術",
+    "tags": [
+      "発酵",
+      "バイオリアクター",
+      "スケールアップ",
+      "AI制御",
+      "バイオプロセス"
+    ],
+    "patents": [
+      "JP2017-334455"
+    ],
+    "maturity": "高"
+  },
+  {
+    "id": "tech_019",
+    "content": "透明導電性酸化物（ITO代替）薄膜成膜技術。スパッタリング法によるインジウム不使用のAZO（アルミニウムドープ酸化亜鉛）透明導電膜。タッチパネル・有機EL・太陽電池の透明電極に適用可能。成膜コストはITO比40%削減。",
+    "category": "technology",
+    "name": "ITO代替透明導電膜（AZO）成膜技術",
+    "tags": [
+      "透明導電膜",
+      "AZO",
+      "タッチパネル",
+      "OLED",
+      "電子材料"
+    ],
+    "patents": [
+      "JP2011-889900"
+    ],
+    "maturity": "中"
+  },
+  {
+    "id": "tech_020",
+    "content": "植物由来バイオマス原料転換・精製技術。サトウキビ・トウモロコシ・廃木材を原料とした化学品モノマー製造プロセス。石油由来モノマーへの代替で製品のCO2排出量を30〜60%削減。1,4-ブタンジオール・コハク酸の実証生産に成功。",
+    "category": "technology",
+    "name": "植物由来バイオマス化学品製造技術",
+    "tags": [
+      "バイオマス",
+      "植物由来",
+      "脱炭素",
+      "グリーンケミストリー",
+      "モノマー"
+    ],
+    "patents": [
+      "JP2019-445566"
+    ],
+    "maturity": "中"
+  },
+  {
+    "id": "proj_001",
+    "content": "ビルエネルギー管理システム（BEMS）事業。自社センサー技術を活用した中小ビル向けBEMSを開発・販売。施工会社との連携不足と初期導入コストの高さが障壁となり2018年に撤退。しかし2024年改正省エネ法施行後は市場環境が大きく変化し、再参入を検討中。",
+    "category": "past_project",
+    "name": "ビルエネルギー管理（BEMS）事業",
+    "tags": [
+      "BEMS",
+      "省エネ",
+      "ビル管理",
+      "IoT",
+      "センサー",
+      "エネルギー"
+    ],
+    "outcome_status": "discontinued",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "missed",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": "organizational",
+    "failure_reason": "施工会社との代理店ネットワークが不十分で設置工事を外注できず、初期導入コストが想定の2倍超となった。省エネ法の義務化範囲が当時は大型ビルのみで中小ビル市場の需要喚起が不十分だった。",
+    "lessons_learned": "施工会社との提携体制を事前に構築することが参入の前提条件。SaaS型料金体系への転換で初期費用ゼロ化が必要。規制の義務化拡大タイミングを狙った再参入戦略が有効。",
+    "reusable_assets": [
+      "BEMS向けセンサー設計・評価ノウハウ（技術開発部）",
+      "中小ビルオーナー向け省エネ提案資料・デモ実績",
+      "全国200社超の施工会社との代理店契約（2023年締結済み）",
+      "改正省エネ法対応コンサルティング知見（法務部）",
+      "SaaS型課金モデルの設計ドキュメント"
+    ],
+    "conditions_now": {
+      "施工会社ネットワーク": {
+        "status": "解決済",
+        "detail": "2023年に全国200社の施工会社と代理店契約を締結済み",
+        "year_assessed": 2025
+      },
+      "初期導入コスト": {
+        "status": "解決済",
+        "detail": "SaaS型月額課金モデルに転換し初期費用ゼロを実現",
+        "year_assessed": 2025
+      },
+      "省エネ規制義務化": {
+        "status": "解決済",
+        "detail": "2024年改正省エネ法で延床300㎡以上のビルに義務化、対象50万棟",
+        "year_assessed": 2025
+      }
+    },
+    "risk_level_now": "低",
+    "related_techs": [
+      "tech_001",
+      "tech_008"
+    ],
+    "related_persons": [
+      "person_001",
+      "person_005"
+    ],
+    "year_start": 2015,
+    "year_end": 2018,
+    "budget_scale": "大（5億円以上）"
+  },
+  {
+    "id": "proj_002",
+    "content": "医療機器向けCoQ10原料供給事業。心疾患・神経変性疾患治療薬の補助剤として医薬品グレードCoQ10の供給拡大に成功。国内製薬大手5社への長期供給契約を締結。自社発酵技術の品質優位を活かした高付加価値展開で営業利益率28%を達成。 【再利用可能資産】医薬品グレード品質管理体制（GMP認証済み製造ライン）、国内製薬大手5社との長期供給契約・信頼関係、薬機法・GMPコンプライアンス対応ノウハウ（品質保証部）、CoQ10分析・品質評価の標準化プロセス",
+    "category": "past_project",
+    "name": "医薬品グレードCoQ10原料供給事業",
+    "tags": [
+      "CoQ10",
+      "医薬品",
+      "原料供給",
+      "心疾患",
+      "発酵",
+      "機能性素材"
+    ],
+    "outcome_status": "completed",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "exceeded",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "既存の発酵技術・品質管理ノウハウを医薬品グレードに転用することで高利益率事業を構築できる。薬機法対応の品質体制構築が最初のハードル。製薬会社との長期契約前には数年間の信頼構築期間が必要。",
+    "reusable_assets": [
+      "医薬品グレード品質管理体制（GMP認証済み製造ライン）",
+      "国内製薬大手5社との長期供給契約・信頼関係",
+      "薬機法・GMPコンプライアンス対応ノウハウ（品質保証部）",
+      "CoQ10分析・品質評価の標準化プロセス"
+    ],
+    "conditions_now": {},
+    "risk_level_now": "低",
+    "related_techs": [
+      "tech_001",
+      "tech_018"
+    ],
+    "related_persons": [
+      "person_002",
+      "person_006"
+    ],
+    "year_start": 2005,
+    "year_end": null,
+    "budget_scale": "大（5億円以上）"
+  },
+  {
+    "id": "proj_003",
+    "content": "消費者向けCoQ10・グルタチオン配合サプリメントのD2C（直販）事業。自社高品質素材を活かしたブランドを立ち上げたが、Amazon・楽天上のPB品との価格競争に敗れECでの集客コストが採算を圧迫。2年で撤退。",
+    "category": "past_project",
+    "name": "機能性素材D2Cサプリメント事業",
+    "tags": [
+      "サプリメント",
+      "D2C",
+      "CoQ10",
+      "グルタチオン",
+      "B2C",
+      "健康食品"
+    ],
+    "outcome_status": "discontinued",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "missed",
+      "technology_validated": false
+    },
+    "discontinued_reason_type": "organizational",
+    "failure_reason": "BtoB素材メーカーとしてのブランド認知度がゼロで、EC広告費が売上の60%超を占めた。価格優位性があっても消費者への訴求力がなく、リピート購買率が5%と低水準だった。",
+    "lessons_learned": "製造技術の優位性はB2C市場では直接的な競争優位にならない。消費者向けブランドの構築には数十億円規模のマーケティング投資と数年単位の時間が必要。B2B2C（OEM供給）の形での参入が現実的。",
+    "reusable_assets": [
+      "EC販売・物流オペレーション構築の知見",
+      "消費者インサイト調査データ（対象：30〜60代健康意識層）",
+      "パッケージデザイン・製品訴求ノウハウ",
+      "薬機法・機能性表示食品制度への対応知見"
+    ],
+    "conditions_now": {
+      "ブランド認知度": {
+        "status": "未解決",
+        "detail": "B2C向けブランド力は依然ゼロに近く、巨大PB・既存ブランドとの差別化が困難",
+        "year_assessed": 2025
+      },
+      "マーケティング予算": {
+        "status": "未解決",
+        "detail": "EC広告費・インフルエンサー費用の採算構造が改善されていない",
+        "year_assessed": 2025
+      }
+    },
+    "risk_level_now": "高",
+    "related_techs": [
+      "tech_001",
+      "tech_005"
+    ],
+    "related_persons": [
+      "person_003"
+    ],
+    "year_start": 2019,
+    "year_end": 2021,
+    "budget_scale": "中（1〜5億円）"
+  },
+  {
+    "id": "proj_004",
+    "content": "PHBH生分解性プラスチックを使用した使い捨て容器・ストロー事業。2018年当時は市場啓発段階で採用企業が少なく価格競争力も不十分で撤退。2022年以降のプラスチック規制強化・ESG調達ニーズの高まりで条件が大変化。",
+    "category": "past_project",
+    "name": "PHBH生分解性使い捨て容器事業",
+    "tags": [
+      "PHBH",
+      "生分解",
+      "プラスチック代替",
+      "ESG",
+      "食品容器",
+      "ストロー"
+    ],
+    "outcome_status": "discontinued",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "missed",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": "market_timing",
+    "failure_reason": "市場の環境意識・規制が追いついておらず、PETや紙素材との価格差（約3倍）を正当化できなかった。フードサービス大手の調達基準にまだ生分解プラが含まれていなかった。",
+    "lessons_learned": "技術と製品は完成していた。規制・市場啓発のタイミングを待つことが重要で、今がまさにその時機。既存顧客へのESGレポート対応支援とセットで提案することで採用ハードルを下げられる。",
+    "reusable_assets": [
+      "PHBHの成形・加工技術ノウハウ（全包装形態対応）",
+      "食品安全規格（FDA・EFSA）への適合検証データ",
+      "フードサービス大手との試験採用実績・評価レポート",
+      "生分解速度の測定・認証取得プロセスの知見"
+    ],
+    "conditions_now": {
+      "プラスチック規制": {
+        "status": "解決済",
+        "detail": "2022年プラスチック資源循環法施行、飲食業界での代替素材採用が義務化傾向",
+        "year_assessed": 2025
+      },
+      "ESG調達基準": {
+        "status": "解決済",
+        "detail": "主要フードサービス20社がESG調達方針に生分解素材の優先採用を明記",
+        "year_assessed": 2025
+      },
+      "価格競争力": {
+        "status": "解決済",
+        "detail": "生産スケール拡大によりコスト50%削減、紙製品と同等価格帯を実現",
+        "year_assessed": 2025
+      }
+    },
+    "risk_level_now": "低",
+    "related_techs": [
+      "tech_002",
+      "tech_009"
+    ],
+    "related_persons": [
+      "person_004",
+      "person_009"
+    ],
+    "year_start": 2016,
+    "year_end": 2018,
+    "budget_scale": "中（1〜5億円）"
+  },
+  {
+    "id": "proj_005",
+    "content": "EV（電気自動車）向けリチウムイオン電池用バインダー材料事業。自動車メーカーとの共同開発で性能検証は完了したが、CATL・パナソニックに対する電池セルメーカーへのアクセスが課題。国内電池メーカー2社には採用されたが、海外大手への展開が停滞中。",
+    "category": "past_project",
+    "name": "EV電池用バインダー材料事業",
+    "tags": [
+      "EV",
+      "電池材料",
+      "バインダー",
+      "LiB",
+      "自動車",
+      "電動化"
+    ],
+    "outcome_status": "ongoing",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "missed",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "電池サプライチェーンは垂直統合が進んでおり、セルメーカーとの直接関係構築が不可欠。技術性能だけでなく、量産対応・ローカライズ供給体制の構築が海外展開の鍵。",
+    "reusable_assets": [
+      "電池性能評価（充放電サイクル・容量劣化）測定設備と技術",
+      "国内電池メーカー2社との共同開発・供給実績",
+      "電池電極設計・スラリー分散技術のノウハウ",
+      "電池規格（UN38.3等）認証取得の知見"
+    ],
+    "conditions_now": {
+      "海外電池メーカーへのアクセス": {
+        "status": "一部解決",
+        "detail": "韓国LGエナジーとの試験採用を開始、中国CATLは検討段階",
+        "year_assessed": 2025
+      },
+      "量産供給体制": {
+        "status": "解決済",
+        "detail": "大阪工場の増産設備投資完了、月産100トン体制構築",
+        "year_assessed": 2025
+      }
+    },
+    "risk_level_now": "中",
+    "related_techs": [
+      "tech_010"
+    ],
+    "related_persons": [
+      "person_007"
+    ],
+    "year_start": 2020,
+    "year_end": null,
+    "budget_scale": "大（5億円以上）"
+  },
+  {
+    "id": "proj_006",
+    "content": "農業IoTセンサー・精密農業プラットフォーム事業。自社センサー技術を活用した土壌・気象・生育データの統合管理サービス。農家のデジタルリテラシー問題と初期導入コストの高さで普及が滞り事業縮小。大規模農業法人向けに絞り込んで継続中。",
+    "category": "past_project",
+    "name": "農業IoT・精密農業プラットフォーム事業",
+    "tags": [
+      "農業IoT",
+      "精密農業",
+      "センサー",
+      "スマート農業",
+      "DX"
+    ],
+    "outcome_status": "pivoted",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "missed",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": "organizational",
+    "failure_reason": "個人農家（主要ターゲット）のITリテラシー不足と設定作業の複雑さで普及障壁が高かった。農協経由の販売ルートを持たず、農家への直接アプローチにコストがかかりすぎた。",
+    "lessons_learned": "農家個人向けよりも農業法人・農協・JA向けのBtoB展開が現実的。UIのシンプル化と農協チャネルとの提携が普及の鍵。植物工場・大規模スマート農場への特化が利益創出に近道。",
+    "reusable_assets": [
+      "土壌・気象・生育センサーの農業特化キャリブレーション技術",
+      "農業データ収集・分析プラットフォーム（SaaS基盤）",
+      "大規模農業法人20社との継続利用契約",
+      "農業気象・収量予測AIモデル（学習データ蓄積済み）"
+    ],
+    "conditions_now": {
+      "農業DX推進環境": {
+        "status": "解決済",
+        "detail": "農水省スマート農業推進政策により補助金制度が整備、農業法人の導入意欲が向上",
+        "year_assessed": 2025
+      },
+      "農協チャネル": {
+        "status": "一部解決",
+        "detail": "JA全農との協力関係構築中、一部地域で共同実証を開始",
+        "year_assessed": 2025
+      }
+    },
+    "risk_level_now": "中",
+    "related_techs": [
+      "tech_009",
+      "tech_007"
+    ],
+    "related_persons": [
+      "person_008"
+    ],
+    "year_start": 2018,
+    "year_end": null,
+    "budget_scale": "中（1〜5億円）"
+  },
+  {
+    "id": "proj_007",
+    "content": "建材一体型フレキシブル太陽電池（BIPV）事業。カーテンウォール・屋根材・窓ガラスに薄膜太陽電池を組み込んだ建材として展開。ゼネコンとの設計段階からの協業が必要で、販路開拓に時間がかかり収益化が遅延。大手ゼネコン3社と共同プロジェクト進行中。 【再利用可能資産】BIPVの建築基準法・消防法への適合実績・技術ドキュメント、大手ゼネコン3社との共同開発関係、ZEB設計支援のコンサルティングノウハウ、フレキシブル太陽電池の屋外長期耐久性データ（10年分）",
+    "category": "past_project",
+    "name": "建材一体型フレキシブル太陽電池（BIPV）事業",
+    "tags": [
+      "太陽電池",
+      "BIPV",
+      "建材",
+      "再生可能エネルギー",
+      "ゼネコン",
+      "ZEB"
+    ],
+    "outcome_status": "ongoing",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "missed",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "建材市場はゼネコン・設計事務所との設計段階からの協業が必須で、技術営業に3〜5年の時間を要する。ZEB（ゼロエネルギービル）認定の取得支援をセットにすることで採用率が向上。",
+    "reusable_assets": [
+      "BIPVの建築基準法・消防法への適合実績・技術ドキュメント",
+      "大手ゼネコン3社との共同開発関係",
+      "ZEB設計支援のコンサルティングノウハウ",
+      "フレキシブル太陽電池の屋外長期耐久性データ（10年分）"
+    ],
+    "conditions_now": {},
+    "risk_level_now": "中",
+    "related_techs": [
+      "tech_004",
+      "tech_008"
+    ],
+    "related_persons": [
+      "person_007",
+      "person_010"
+    ],
+    "year_start": 2017,
+    "year_end": null,
+    "budget_scale": "大（5億円以上）"
+  },
+  {
+    "id": "proj_008",
+    "content": "スマートウォッチ・ウェアラブルデバイス向けバイオセンサー素材事業。自社の生体適合性シリコーンを活用したウェアラブル向けセンサー部材の販売を試みたが、Apple・Samsungの垂直統合サプライチェーンに参入できず撤退。",
+    "category": "past_project",
+    "name": "ウェアラブル向けバイオセンサー部材事業",
+    "tags": [
+      "ウェアラブル",
+      "スマートウォッチ",
+      "バイオセンサー",
+      "B2C",
+      "Apple",
+      "Samsung"
+    ],
+    "outcome_status": "discontinued",
+    "outcome_dimensions": {
+      "commercialized": false,
+      "revenue_vs_target": null,
+      "technology_validated": true
+    },
+    "discontinued_reason_type": "organizational",
+    "failure_reason": "大手ウェアラブルメーカーのサプライチェーンは系列・指定業者で固定されており、新規参入の余地がなかった。認定サプライヤー登録プロセスに2〜3年を要することが判明し断念。",
+    "lessons_learned": "Apple・Samsung等のティア1サプライヤーになるには長期の関係構築が必要。医療グレードのウェアラブル（血糖計・心電図など）の方がコモディティ化が進んでおらず参入余地がある。B2Cエンドプロダクト市場は参入困難で、医療機器B2B路線への転換が有効。",
+    "reusable_assets": [
+      "皮膚接触用シリコーン素材の安全性・快適性評価データ",
+      "ウェアラブルデバイスの規格要件・認証プロセス知見",
+      "医療グレードウェアラブルメーカー数社との技術評価関係"
+    ],
+    "conditions_now": {
+      "ティア1サプライヤー認定": {
+        "status": "未解決",
+        "detail": "大手ウェアラブルメーカーの指定サプライヤー認定の見込みなし",
+        "year_assessed": 2025
+      },
+      "B2C市場でのブランド力": {
+        "status": "未解決",
+        "detail": "エンドユーザー向けブランドをゼロから構築する手段がない",
+        "year_assessed": 2025
+      }
+    },
+    "risk_level_now": "高",
+    "related_techs": [
+      "tech_006"
+    ],
+    "related_persons": [
+      "person_003"
+    ],
+    "year_start": 2020,
+    "year_end": 2022,
+    "budget_scale": "中（1〜5億円）"
+  },
+  {
+    "id": "proj_009",
+    "content": "海外農業資材（生分解性マルチフィルム）直販事業。東南アジア・インド向けに農業用生分解性フィルムを直接販売しようとしたが、現地流通網の未整備と低価格品との競争で採算取れず撤退。",
+    "category": "past_project",
+    "name": "東南アジア農業資材直販事業",
+    "tags": [
+      "農業",
+      "東南アジア",
+      "海外展開",
+      "生分解",
+      "マルチフィルム",
+      "直販"
+    ],
+    "outcome_status": "discontinued",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "missed",
+      "technology_validated": false
+    },
+    "discontinued_reason_type": "organizational",
+    "failure_reason": "現地農業資材の流通は農協・資材商社が握っており、自社直販での農家へのリーチが困難だった。現地の低価格PE製品に対して生分解プレミアムの理解を得られなかった。",
+    "lessons_learned": "東南アジア農業市場への参入は現地パートナー（現地商社・農協）経由が必須。環境素材のプレミアム訴求は先進国向け輸出農産物の生産者（エコラベル要件を満たす必要がある農家）に絞るべき。",
+    "reusable_assets": [
+      "東南アジア主要農業国の市場・規制調査レポート",
+      "現地農業資材商社数社との一時的な販売代理店契約実績",
+      "現地環境規制・プラスチック規制動向の継続モニタリング体制"
+    ],
+    "conditions_now": {
+      "現地流通パートナー": {
+        "status": "未解決",
+        "detail": "信頼できる現地農業資材流通パートナーの確保ができていない",
+        "year_assessed": 2025
+      },
+      "環境素材への市場認識": {
+        "status": "一部解決",
+        "detail": "タイ・ベトナムでプラスチック規制検討が始まっており意識変化の兆し",
+        "year_assessed": 2025
+      }
+    },
+    "risk_level_now": "高",
+    "related_techs": [
+      "tech_002",
+      "tech_009"
+    ],
+    "related_persons": [
+      "person_004"
+    ],
+    "year_start": 2021,
+    "year_end": 2023,
+    "budget_scale": "中（1〜5億円）"
+  },
+  {
+    "id": "proj_010",
+    "content": "自動車用EPP（発泡ポリプロピレン）緩衝材の国内自動車メーカーへの展開。独自発泡技術による軽量・高衝撃吸収性能でバンパーコア・ドアライナー・シートコアに採用。国内自動車メーカー7社との取引を実現し売上500億円規模に成長した成功事例。 【再利用可能資産】国内自動車メーカー7社との長期サプライヤー関係、FMVSS・ECEなど自動車安全規格への適合実績、EPP製品の大量生産・品質管理体制、Tier1自動車部品メーカー（デンソー・豊田合成等）との取引実績",
+    "category": "past_project",
+    "name": "自動車用EPP緩衝材事業",
+    "tags": [
+      "EPP",
+      "自動車",
+      "緩衝材",
+      "軽量化",
+      "バンパー",
+      "成形"
+    ],
+    "outcome_status": "completed",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "exceeded",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "自動車メーカーへの採用には衝突安全基準（FMVSS・ECE）への準拠と5年以上の品質実績が必要。Tier1サプライヤー経由の間接販売が最も効率的なアプローチ。軽量化ニーズはEV転換でさらに高まっており横展開余地大。",
+    "reusable_assets": [
+      "国内自動車メーカー7社との長期サプライヤー関係",
+      "FMVSS・ECEなど自動車安全規格への適合実績",
+      "EPP製品の大量生産・品質管理体制",
+      "Tier1自動車部品メーカー（デンソー・豊田合成等）との取引実績"
+    ],
+    "conditions_now": {},
+    "risk_level_now": "低",
+    "related_techs": [
+      "tech_003"
+    ],
+    "related_persons": [
+      "person_005",
+      "person_011"
+    ],
+    "year_start": 1995,
+    "year_end": null,
+    "budget_scale": "大（5億円以上）"
+  },
+  {
+    "id": "proj_011",
+    "content": "太陽電池パネル向け封止材・接着剤事業。フレキシブル太陽電池モジュールのラミネート封止材として独自変性シリコーン系素材を開発・供給。中国太陽電池メーカーへの参入で2010年代にシェア拡大。現在も継続中で太陽電池事業の基盤収益源。 【再利用可能資産】太陽電池封止材の耐候性・長期信頼性評価技術（IEC61215準拠）、中国・東南アジア太陽電池メーカーとの取引実績・ネットワーク、モジュール製造プロセスへの組み込み技術支援ノウハウ",
+    "category": "past_project",
+    "name": "太陽電池モジュール封止材・接着剤事業",
+    "tags": [
+      "太陽電池",
+      "封止材",
+      "接着剤",
+      "シリコーン",
+      "モジュール",
+      "再生可能エネルギー"
+    ],
+    "outcome_status": "completed",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "met",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "再生可能エネルギー市場は補助金政策に収益が左右される。中国メーカーとの価格競争激化に備え、高付加価値品（長寿命・高耐候品）への差別化が継続的に必要。",
+    "reusable_assets": [
+      "太陽電池封止材の耐候性・長期信頼性評価技術（IEC61215準拠）",
+      "中国・東南アジア太陽電池メーカーとの取引実績・ネットワーク",
+      "モジュール製造プロセスへの組み込み技術支援ノウハウ"
+    ],
+    "conditions_now": {},
+    "risk_level_now": "低",
+    "related_techs": [
+      "tech_004",
+      "tech_008"
+    ],
+    "related_persons": [
+      "person_010"
+    ],
+    "year_start": 2008,
+    "year_end": null,
+    "budget_scale": "大（5億円以上）"
+  },
+  {
+    "id": "proj_012",
+    "content": "バイオシミラー（抗体医薬品の後発品）製造受託（CMO）事業。自社タンパク質工学技術・GMP設備を活用した製造受託を開始。バイオシミラー市場は2020年代に急拡大中で国内製薬3社から受注。売上目標には届いていないが技術力・信頼性は確立。 【再利用可能資産】PMDA・FDA認定GMP製造設備（バイオリアクター100kL）、国内製薬3社との製造受託契約・品質実績、バイオシミラー製造の工程開発・技術移転ノウハウ、ICH品質ガイドライン対応の品質管理体制",
+    "category": "past_project",
+    "name": "バイオシミラー製造受託（CMO）事業",
+    "tags": [
+      "バイオシミラー",
+      "CMO",
+      "抗体医薬",
+      "GMP",
+      "製造受託",
+      "バイオ医薬品"
+    ],
+    "outcome_status": "ongoing",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "missed",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "バイオ医薬品の製造受託は規制当局（PMDA・FDA）の承認取得が顧客獲得の前提。初期投資は大きいが一旦採用されると長期継続案件になる。PMDA認定取得後の案件受注ペースが加速している。",
+    "reusable_assets": [
+      "PMDA・FDA認定GMP製造設備（バイオリアクター100kL）",
+      "国内製薬3社との製造受託契約・品質実績",
+      "バイオシミラー製造の工程開発・技術移転ノウハウ",
+      "ICH品質ガイドライン対応の品質管理体制"
+    ],
+    "conditions_now": {},
+    "risk_level_now": "低",
+    "related_techs": [
+      "tech_012",
+      "tech_013",
+      "tech_018"
+    ],
+    "related_persons": [
+      "person_006",
+      "person_012"
+    ],
+    "year_start": 2019,
+    "year_end": null,
+    "budget_scale": "大（5億円以上）"
+  },
+  {
+    "id": "proj_013",
+    "content": "半導体製造工程向けポリイミドプロセステープ事業。耐熱ポリイミドフィルムを活用した半導体製造用マスキング・固定テープ。歩留まり向上・プロセス安定化に寄与し、半導体メーカー5社に採用。売上は堅調で技術的参入障壁が高く競合少数。 【再利用可能資産】半導体メーカー5社からの品質認定・承認実績、クリーンルーム対応製造ライン・品質管理体制、半導体製造工程の技術知識・顧客プロセス理解",
+    "category": "past_project",
+    "name": "半導体製造用ポリイミドプロセステープ事業",
+    "tags": [
+      "半導体",
+      "ポリイミド",
+      "プロセステープ",
+      "電子材料",
+      "製造工程"
+    ],
+    "outcome_status": "completed",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "exceeded",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "半導体材料市場は認定プロセスが厳しい一方、一旦採用されると数年間の安定受注が続く。生産技術の秘匿性が高い顧客向けに品質・製造情報の機密保持体制構築が信頼獲得の鍵。",
+    "reusable_assets": [
+      "半導体メーカー5社からの品質認定・承認実績",
+      "クリーンルーム対応製造ライン・品質管理体制",
+      "半導体製造工程の技術知識・顧客プロセス理解"
+    ],
+    "conditions_now": {},
+    "risk_level_now": "低",
+    "related_techs": [
+      "tech_011"
+    ],
+    "related_persons": [
+      "person_013"
+    ],
+    "year_start": 2010,
+    "year_end": null,
+    "budget_scale": "中（1〜5億円）"
+  },
+  {
+    "id": "proj_014",
+    "content": "医薬品原薬中間体の精密合成受託（CDMO）事業。GMP認定設備での光学活性中間体製造受託。外資製薬2社・国内製薬4社から継続受注。少量多品種の高付加価値品に特化し、営業利益率35%を維持。CDMO市場の拡大に伴い設備投資・拡張継続中。 【再利用可能資産】FDA・PMDA査察クリア済みGMP製造設備、外資・国内製薬6社との長期受注関係、不斉合成・酵素触媒反応の専門技術人材（10名体制）、高薬理活性物質（HPAPI）対応の封じ込め設備",
+    "category": "past_project",
+    "name": "医薬品原薬中間体CDMO事業",
+    "tags": [
+      "CDMO",
+      "医薬品中間体",
+      "不斉合成",
+      "GMP",
+      "製薬",
+      "光学活性"
+    ],
+    "outcome_status": "completed",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "exceeded",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "高付加価値少量品への特化が利益率向上に直結。FDA・PMDAの二重査察クリアが外資製薬からの受注条件。一品目の長期受注関係が生まれると5〜10年の安定収益源になる。",
+    "reusable_assets": [
+      "FDA・PMDA査察クリア済みGMP製造設備",
+      "外資・国内製薬6社との長期受注関係",
+      "不斉合成・酵素触媒反応の専門技術人材（10名体制）",
+      "高薬理活性物質（HPAPI）対応の封じ込め設備"
+    ],
+    "conditions_now": {},
+    "risk_level_now": "低",
+    "related_techs": [
+      "tech_017",
+      "tech_013"
+    ],
+    "related_persons": [
+      "person_014",
+      "person_006"
+    ],
+    "year_start": 2012,
+    "year_end": null,
+    "budget_scale": "大（5億円以上）"
+  },
+  {
+    "id": "proj_015",
+    "content": "消費者向けスマートホームデバイス（空気質センサー連携システム）のB2C事業。IoTセンサー技術を活かして家庭用CO2・VOCセンサーをスマートフォン連携デバイスとして販売。家電量販店・ECでの販売を試みたが、アイリスオーヤマ・パナソニック等との価格競争に敗れ撤退。",
+    "category": "past_project",
+    "name": "スマートホーム空気質センサーB2C事業",
+    "tags": [
+      "スマートホーム",
+      "IoT",
+      "空気質センサー",
+      "B2C",
+      "家電",
+      "CO2"
+    ],
+    "outcome_status": "discontinued",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "missed",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": "organizational",
+    "failure_reason": "家電量販チャネルでの棚獲得に高額なリベートが必要で採算が悪化。ブランド認知度のない化学メーカーとしてB2C向け広告投資の費用対効果が低かった。家電メーカーが同機能製品を2000円台で展開し価格勝負にならなかった。",
+    "lessons_learned": "家電市場のチャネルコスト・ブランド投資は化学メーカーの事業モデルに合わない。同じ技術でもオフィスビル・工場・学校向けのBtoB空気質モニタリングサービスなら高付加価値が成立する。",
+    "reusable_assets": [
+      "CO2・VOC・温湿度の複合センシング技術と小型化ノウハウ",
+      "スマートフォンアプリとのBLE連携・クラウド連携技術",
+      "家電量販店・EC販売のオペレーション知見",
+      "室内空気質の計測データ・評価手法の標準化ノウハウ"
+    ],
+    "conditions_now": {
+      "B2C向けブランド力": {
+        "status": "未解決",
+        "detail": "B2C市場での認知度は依然として低く、家電メーカーとの差別化困難",
+        "year_assessed": 2025
+      },
+      "価格競争力": {
+        "status": "未解決",
+        "detail": "家電メーカーの量産効果による価格低下が続いており逆転困難",
+        "year_assessed": 2025
+      }
+    },
+    "risk_level_now": "高",
+    "related_techs": [
+      "tech_001"
+    ],
+    "related_persons": [
+      "person_001",
+      "person_003"
+    ],
+    "year_start": 2021,
+    "year_end": 2023,
+    "budget_scale": "中（1〜5億円）"
+  },
+  {
+    "id": "proj_016",
+    "content": "水電解・グリーン水素製造向けイオン交換膜事業。燃料電池用フッ素系イオン交換膜技術を水電解装置向けに転用。水素コスト低減の鍵となる高効率電解膜として欧州・日本の水電解装置メーカーに評価提供中。商用化まであと1〜2年の段階。 【再利用可能資産】水電解条件下（高電流密度・高温）での膜耐久性評価データ、欧州水電解装置メーカー数社との共同評価関係、フッ素系ポリマー合成・製膜の製造技術",
+    "category": "past_project",
+    "name": "グリーン水素製造用イオン交換膜事業",
+    "tags": [
+      "グリーン水素",
+      "水電解",
+      "イオン交換膜",
+      "再生可能エネルギー",
+      "脱炭素"
+    ],
+    "outcome_status": "ongoing",
+    "outcome_dimensions": {
+      "commercialized": false,
+      "revenue_vs_target": null,
+      "technology_validated": true
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "水素関連事業は政府の水素戦略・補助金政策と密接に連動する。耐久性（5万時間以上）の実証データが採用の決め手になるため、早期からの実証フィールド確保が重要。",
+    "reusable_assets": [
+      "水電解条件下（高電流密度・高温）での膜耐久性評価データ",
+      "欧州水電解装置メーカー数社との共同評価関係",
+      "フッ素系ポリマー合成・製膜の製造技術"
+    ],
+    "conditions_now": {},
+    "risk_level_now": "中",
+    "related_techs": [
+      "tech_016"
+    ],
+    "related_persons": [
+      "person_015"
+    ],
+    "year_start": 2022,
+    "year_end": null,
+    "budget_scale": "大（5億円以上）"
+  },
+  {
+    "id": "proj_017",
+    "content": "食品用CoQ10・グルタチオン配合機能性飲料のOEM・BtoB供給事業。自社高品質バイオ素材を飲料メーカー・コンビニPB向けにOEM素材として供給。BtoB形態のため利益率は低いが安定した量販ルートを確保。年商50億円規模で継続中。 【再利用可能資産】コンビニ・飲料メーカー10社超との素材供給関係、CoQ10・グルタチオンの有効性臨床データ（査読論文あり）、機能性表示食品制度対応の届出・審査ノウハウ、食品添加物・食品素材としての安全性データパッケージ",
+    "category": "past_project",
+    "name": "機能性素材BtoB食品OEM事業",
+    "tags": [
+      "機能性食品",
+      "OEM",
+      "CoQ10",
+      "グルタチオン",
+      "飲料",
+      "BtoB"
+    ],
+    "outcome_status": "completed",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "met",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "機能性素材の食品市場への参入はブランドを持つ食品メーカーへのBtoB素材供給が最も効率的。製品の有効性エビデンス（臨床データ）を持つことが素材の差別化と採用率向上に直結する。",
+    "reusable_assets": [
+      "コンビニ・飲料メーカー10社超との素材供給関係",
+      "CoQ10・グルタチオンの有効性臨床データ（査読論文あり）",
+      "機能性表示食品制度対応の届出・審査ノウハウ",
+      "食品添加物・食品素材としての安全性データパッケージ"
+    ],
+    "conditions_now": {},
+    "risk_level_now": "低",
+    "related_techs": [
+      "tech_001",
+      "tech_005"
+    ],
+    "related_persons": [
+      "person_002",
+      "person_016"
+    ],
+    "year_start": 2010,
+    "year_end": null,
+    "budget_scale": "大（5億円以上）"
+  },
+  {
+    "id": "proj_018",
+    "content": "建築用高性能断熱発泡材（フェノールフォーム）事業。EPP技術の応用として建築壁面・屋根断熱材に展開。省エネ建築への需要拡大を追い風に住宅メーカー・ゼネコン向けに拡大中。ZEH・ZEB認定への適合で採用率が向上。 【再利用可能資産】住宅メーカー大手5社・ゼネコン10社との採用実績、ZEH/ZEB基準への適合技術・認定取得ノウハウ、建築基準法・防火規制への適合実績（全グレード）、熱伝導率・防火性能の第三者評価データ",
+    "category": "past_project",
+    "name": "建築用高性能断熱発泡材事業",
+    "tags": [
+      "断熱材",
+      "発泡材料",
+      "建築",
+      "省エネ",
+      "ZEH",
+      "ZEB"
+    ],
+    "outcome_status": "completed",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "exceeded",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "建築材料市場は住宅メーカー・ゼネコンの仕様書に一旦記載されると数年間の安定受注になる。省エネ基準の義務化が強力な需要ドライバー。ZEH/ZEB認定との紐づけが採用率向上に有効。",
+    "reusable_assets": [
+      "住宅メーカー大手5社・ゼネコン10社との採用実績",
+      "ZEH/ZEB基準への適合技術・認定取得ノウハウ",
+      "建築基準法・防火規制への適合実績（全グレード）",
+      "熱伝導率・防火性能の第三者評価データ"
+    ],
+    "conditions_now": {},
+    "risk_level_now": "低",
+    "related_techs": [
+      "tech_003"
+    ],
+    "related_persons": [
+      "person_005",
+      "person_010"
+    ],
+    "year_start": 2005,
+    "year_end": null,
+    "budget_scale": "大（5億円以上）"
+  },
+  {
+    "id": "proj_019",
+    "content": "カーボンクレジット創出・取引事業。自社製品（PHBH・生分解フィルム等）の製造・使用時のCO2削減量をクレジット化して販売する新規事業。J-クレジット制度への登録を進めており、顧客のScope3削減に寄与するクレジット販売を2025年より開始予定。 【再利用可能資産】PHBH・生分解製品のライフサイクルアセスメント（LCA）データ、J-クレジット申請・検証プロセスの知見、大手顧客のGHGインベントリ支援実績",
+    "category": "past_project",
+    "name": "カーボンクレジット創出・取引事業",
+    "tags": [
+      "カーボンクレジット",
+      "脱炭素",
+      "ESG",
+      "Scope3",
+      "GHG",
+      "J-クレジット"
+    ],
+    "outcome_status": "ongoing",
+    "outcome_dimensions": {
+      "commercialized": false,
+      "revenue_vs_target": null,
+      "technology_validated": false
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "カーボンクレジット市場はルール整備途上で先行者利益が大きい。自社製品のLCAデータを整備することがクレジット算定の基盤になる。顧客のGHGレポーティング支援とセットにすることで提案価値が高まる。",
+    "reusable_assets": [
+      "PHBH・生分解製品のライフサイクルアセスメント（LCA）データ",
+      "J-クレジット申請・検証プロセスの知見",
+      "大手顧客のGHGインベントリ支援実績"
+    ],
+    "conditions_now": {},
+    "risk_level_now": "中",
+    "related_techs": [
+      "tech_002",
+      "tech_020"
+    ],
+    "related_persons": [
+      "person_009",
+      "person_017"
+    ],
+    "year_start": 2023,
+    "year_end": null,
+    "budget_scale": "小（1億円未満）"
+  },
+  {
+    "id": "proj_020",
+    "content": "医療機器向けシリコーン部材の受託製造事業。生体適合性シリコーン材料を活用したカテーテル・インプラント部材の精密成形受託。医療機器メーカーからの継続受注で年商30億円規模。ISO 13485認定・薬機法対応製造体制が参入障壁。 【再利用可能資産】ISO 13485認定製造ライン・品質管理体制、薬機法対応の製造販売業許可取得実績、医療機器メーカー8社との長期受託契約関係、医療機器用精密成形技術・クリーン製造ノウハウ",
+    "category": "past_project",
+    "name": "医療機器用シリコーン部材受託製造事業",
+    "tags": [
+      "医療機器",
+      "シリコーン",
+      "受託製造",
+      "ISO13485",
+      "カテーテル",
+      "埋植"
+    ],
+    "outcome_status": "completed",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "met",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "医療機器受託製造は規制対応コストが高いが参入障壁としても機能し、競合少数で高利益率を維持できる。ISO 13485の維持・更新が顧客との継続契約の条件になる。不具合発生時の対応速度が信頼の核心。",
+    "reusable_assets": [
+      "ISO 13485認定製造ライン・品質管理体制",
+      "薬機法対応の製造販売業許可取得実績",
+      "医療機器メーカー8社との長期受託契約関係",
+      "医療機器用精密成形技術・クリーン製造ノウハウ"
+    ],
+    "conditions_now": {},
+    "risk_level_now": "低",
+    "related_techs": [
+      "tech_006"
+    ],
+    "related_persons": [
+      "person_006",
+      "person_018"
+    ],
+    "year_start": 2008,
+    "year_end": null,
+    "budget_scale": "大（5億円以上）"
+  },
+  {
+    "id": "proj_021",
+    "content": "バイオ由来プラスチック（PLA・PHBH混合）の食品包装フィルム事業。石油系包装フィルムの代替として食品メーカー向けに展開。コスト競争力の改善が進んでいるが、既存PETフィルムとの価格差がまだ1.5倍あり普及が限定的。",
+    "category": "past_project",
+    "name": "バイオ由来食品包装フィルム事業",
+    "tags": [
+      "バイオプラスチック",
+      "食品包装",
+      "PLA",
+      "PHBH",
+      "フィルム",
+      "脱炭素"
+    ],
+    "outcome_status": "ongoing",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "missed",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "食品包装の素材転換は食品メーカーのESGコミットメント強化のタイミングに合わせた提案が効果的。コスト差が1.3倍以下になれば大手食品メーカーが採用を始めると想定。",
+    "reusable_assets": [
+      "PHBH/PLA混合フィルムの食品接触適合評価データ（FDA・厚労省）",
+      "食品メーカー5社との試験採用・評価実績",
+      "バイオプラフィルムの成形・製袋技術"
+    ],
+    "conditions_now": {
+      "コスト競争力": {
+        "status": "一部解決",
+        "detail": "生産スケール拡大でPETとの価格差を3倍→1.5倍に縮小、あと一息",
+        "year_assessed": 2025
+      },
+      "食品メーカーのESG基準": {
+        "status": "解決済",
+        "detail": "大手食品メーカー上位10社がScope3削減計画にバイオ包材採用目標を明記",
+        "year_assessed": 2025
+      }
+    },
+    "risk_level_now": "中",
+    "related_techs": [
+      "tech_002",
+      "tech_020"
+    ],
+    "related_persons": [
+      "person_004",
+      "person_009"
+    ],
+    "year_start": 2020,
+    "year_end": null,
+    "budget_scale": "大（5億円以上）"
+  },
+  {
+    "id": "proj_022",
+    "content": "遺伝子治療・細胞治療向けウイルスベクター製造受託事業。タンパク質工学・バイオリアクター技術を遺伝子治療用AAVベクターの受託製造に応用。市場は急拡大中だが製造の難度が極めて高く、国内CMO参入は数社のみ。臨床試験用製造受託で国内バイオベンチャー3社と契約。 【再利用可能資産】AAVベクター製造の工程開発・スケールアップ技術、国内バイオベンチャー3社からの臨床試験用受託実績、遺伝子治療製剤のGMP製造に対応した施設・設備、PMDA再生医療等製品の製造承認申請支援ノウハウ",
+    "category": "past_project",
+    "name": "遺伝子治療用ウイルスベクターCMO事業",
+    "tags": [
+      "遺伝子治療",
+      "AAVベクター",
+      "CMO",
+      "細胞治療",
+      "バイオ医薬品",
+      "再生医療"
+    ],
+    "outcome_status": "ongoing",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "missed",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "遺伝子治療向けCMOは市場立ち上がりに時間がかかるが参入障壁が極めて高く長期的な競合優位になる。PMDA・FDAの承認品目数の増加とともに受注量が急増するビジネス構造。",
+    "reusable_assets": [
+      "AAVベクター製造の工程開発・スケールアップ技術",
+      "国内バイオベンチャー3社からの臨床試験用受託実績",
+      "遺伝子治療製剤のGMP製造に対応した施設・設備",
+      "PMDA再生医療等製品の製造承認申請支援ノウハウ"
+    ],
+    "conditions_now": {},
+    "risk_level_now": "低",
+    "related_techs": [
+      "tech_012",
+      "tech_018"
+    ],
+    "related_persons": [
+      "person_012",
+      "person_019"
+    ],
+    "year_start": 2022,
+    "year_end": null,
+    "budget_scale": "大（5億円以上）"
+  },
+  {
+    "id": "proj_023",
+    "content": "リサイクルPP（ポリプロピレン）を活用した循環型EPP製品事業。廃棄自動車部品・産業廃棄物のPPをケミカルリサイクルしてバージン品と同等品質のEPP原料に再生。自動車メーカーのリサイクル率目標対応として採用されており、循環型サプライチェーンの構築中。 【再利用可能資産】廃EPP回収・分別・再生プロセス技術、自動車メーカー3社からのリサイクル認定サプライヤー認定、リサイクル品品質保証の検査体制・データ",
+    "category": "past_project",
+    "name": "リサイクルPP循環型EPP事業",
+    "tags": [
+      "リサイクル",
+      "EPP",
+      "循環型",
+      "自動車",
+      "ポリプロピレン",
+      "サーキュラーエコノミー"
+    ],
+    "outcome_status": "ongoing",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "met",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": null,
+    "failure_reason": null,
+    "lessons_learned": "自動車メーカーの2030年リサイクル率目標がサプライヤーへの採用条件として機能している。品質の安定性がバージン品と同等であることのデータ提示が採用の絶対条件。",
+    "reusable_assets": [
+      "廃EPP回収・分別・再生プロセス技術",
+      "自動車メーカー3社からのリサイクル認定サプライヤー認定",
+      "リサイクル品品質保証の検査体制・データ"
+    ],
+    "conditions_now": {},
+    "risk_level_now": "低",
+    "related_techs": [
+      "tech_003"
+    ],
+    "related_persons": [
+      "person_011"
+    ],
+    "year_start": 2021,
+    "year_end": null,
+    "budget_scale": "中（1〜5億円）"
+  },
+  {
+    "id": "proj_024",
+    "content": "消費者向けアウトドア・スポーツ用品向けEPPヘルメットのB2C展開。高衝撃吸収性EPPを活用した自転車・スキー用ヘルメットをD2Cで展開。OGKカブト・SHIMANOとの競合で価格・ブランド力ともに劣り撤退。",
+    "category": "past_project",
+    "name": "アウトドア・スポーツ用EPPヘルメットB2C事業",
+    "tags": [
+      "ヘルメット",
+      "EPP",
+      "スポーツ",
+      "自転車",
+      "B2C",
+      "アウトドア"
+    ],
+    "outcome_status": "discontinued",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "missed",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": "organizational",
+    "failure_reason": "スポーツ用品市場はブランドイメージが購買動機の中心で、素材メーカーとしての認知度では差別化が困難だった。小売チャネル（スポーツショップ・量販店）への参入コストが採算を上回った。",
+    "lessons_learned": "EPPの安全性能はスポーツ用品メーカーへのOEM素材供給として展開する方が高利益。自動車・建設・産業向けB2B用途のほうがブランド不要で性能訴求ができる。",
+    "reusable_assets": [
+      "自転車・スキー安全規格（EN規格・SGマーク）取得実績",
+      "スポーツ用品向けEPP成形・表面処理技術",
+      "ヘルメット設計・衝撃吸収シミュレーション技術"
+    ],
+    "conditions_now": {
+      "B2Cブランド力": {
+        "status": "未解決",
+        "detail": "スポーツ用品市場でのブランド構築には多額の投資が必要で改善見込みなし",
+        "year_assessed": 2025
+      }
+    },
+    "risk_level_now": "高",
+    "related_techs": [
+      "tech_003"
+    ],
+    "related_persons": [
+      "person_005"
+    ],
+    "year_start": 2017,
+    "year_end": 2019,
+    "budget_scale": "中（1〜5億円）"
+  },
+  {
+    "id": "proj_025",
+    "content": "水処理・排水処理用膜分離モジュール事業。自社膜分離精製技術を産業排水処理・飲料水浄化向けに転用。食品工場・製薬工場の排水処理での実証に成功したが、東レ・日東電工との競合で市場シェアが伸びず縮小中。",
+    "category": "past_project",
+    "name": "産業用水処理膜モジュール事業",
+    "tags": [
+      "水処理",
+      "膜分離",
+      "排水処理",
+      "膜モジュール",
+      "環境",
+      "浄水"
+    ],
+    "outcome_status": "discontinued",
+    "outcome_dimensions": {
+      "commercialized": true,
+      "revenue_vs_target": "missed",
+      "technology_validated": true
+    },
+    "discontinued_reason_type": "financial",
+    "failure_reason": "東レ・日東電工・旭化成の大手3社が水処理膜市場を寡占しており、スイッチングコストが高く顧客が既存サプライヤーを変更しない。自社が差別化できる特定ニッチ（医薬品精製）以外では価格で勝てない。",
+    "lessons_learned": "汎用水処理膜は市場参入障壁が低い反面、既存サプライヤーの固定化が強い。自社の強みである医薬品精製・バイオ分離に特化した高付加価値膜モジュールに集中すべき。",
+    "reusable_assets": [
+      "食品工場・製薬工場での排水処理・精製への適用実績",
+      "膜モジュール設計・製造・評価技術",
+      "水処理システム設計・エンジニアリングノウハウ"
+    ],
+    "conditions_now": {
+      "競合との差別化": {
+        "status": "一部解決",
+        "detail": "バイオ医薬品精製に特化した高選択性膜で東レ等との差別化ポジション確立しつつある",
+        "year_assessed": 2025
+      }
+    },
+    "risk_level_now": "中",
+    "related_techs": [
+      "tech_013"
+    ],
+    "related_persons": [
+      "person_014"
+    ],
+    "year_start": 2014,
+    "year_end": 2022,
+    "budget_scale": "中（1〜5億円）"
+  }
+]
