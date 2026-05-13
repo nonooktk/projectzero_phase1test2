@@ -33,9 +33,11 @@ OPENAI_MODEL=gpt-4o-mini
 SUPABASE_URL=...
 SUPABASE_SERVICE_ROLE_KEY=...
 CORS_ORIGINS_RAW=http://localhost:3000
+VECTOR_SEARCH_BACKEND=simple
 ```
 
 `SUPABASE_SERVICE_ROLE_KEY` は backend 専用である。frontend には渡さない。
+`VECTOR_SEARCH_BACKEND=simple` は Render Free 向けの軽量検索である。ローカルで ChromaDB + SentenceTransformer を使う場合は `VECTOR_SEARCH_BACKEND=chroma` に変更する。
 
 ## ローカル起動
 
@@ -92,6 +94,7 @@ OPENAI_MODEL=gpt-4o-mini
 SUPABASE_URL=...
 SUPABASE_SERVICE_ROLE_KEY=...
 CORS_ORIGINS_RAW=http://localhost:3000
+VECTOR_SEARCH_BACKEND=simple
 ```
 
 フロントエンドをVercelへデプロイした後は、`CORS_ORIGINS_RAW` にVercel URLをカンマ区切りで追加する。

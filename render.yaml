@@ -18,3 +18,5 @@ services:
         sync: false
       - key: CORS_ORIGINS_RAW
         value: http://localhost:3000
+      - key: VECTOR_SEARCH_BACKEND
+        value: simple

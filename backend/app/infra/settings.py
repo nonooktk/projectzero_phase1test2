@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     openai_model: str = "gpt-4o-mini"
     supabase_url: str = ""
     supabase_service_role_key: str = ""
+    vector_search_backend: str = "simple"
 
     model_config = SettingsConfigDict(env_file=("../.env", ".env"), extra="ignore")
 
