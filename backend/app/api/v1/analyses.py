@@ -1,10 +1,13 @@
-from fastapi import APIRouter, Depends, Header, status
+import logging
+
+from fastapi import APIRouter, Depends, Header, HTTPException, status
 from pydantic import BaseModel, Field
 
 from app.domain.analysis_service import AnalysisInput, AnalysisService
 from app.infra.di import get_analysis_service
 
 router = APIRouter()
+logger = logging.getLogger(__name__)
 
 
 class AnalysisRequest(BaseModel):
@@ -35,12 +38,19 @@ def create_analysis(
     service: AnalysisService = Depends(get_analysis_service),
 ) -> AnalysisResponse:
     _ = idempotency_key
-    draft = service.start(
-        AnalysisInput(
-            target_market=request.target_market,
-            assets=request.assets,
-            idea_detail=request.idea_detail,
-        ),
-        idempotency_key=idempotency_key,
-    )
+    try:
+        draft = service.start(
+            AnalysisInput(
+                target_market=request.target_market,
+                assets=request.assets,
+                idea_detail=request.idea_detail,
+            ),
+            idempotency_key=idempotency_key,
+        )
+    except Exception as exc:
+        logger.exception("Analysis request failed")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Analysis failed: {exc.__class__.__name__}",
+        ) from exc
     return AnalysisResponse(**draft.to_dict())

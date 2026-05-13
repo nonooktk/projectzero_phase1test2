@@ -78,7 +78,8 @@ export async function createAnalysis(
   });
 
   if (!response.ok) {
-    throw new Error(`API request failed: ${response.status}`);
+    const message = await response.text();
+    throw new Error(`API request failed: ${response.status} ${message}`);
   }
 
   return response.json();

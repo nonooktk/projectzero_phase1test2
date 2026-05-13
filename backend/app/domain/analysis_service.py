@@ -1,4 +1,5 @@
 from dataclasses import asdict, dataclass
+import logging
 from typing import Any
 from uuid import uuid4
 
@@ -13,6 +14,8 @@ from app.ports.graph_search import (
 from app.ports.llm import LLMAnalysis, LLMPort
 from app.ports.repository import AnalysisRepositoryPort
 from app.ports.vector_search import SearchHit, VectorSearchPort
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass(frozen=True)
@@ -110,7 +113,7 @@ class AnalysisService:
         n_results: int = 5,
     ) -> AnalysisDraft:
         if self._repository is not None:
-            existing = self._repository.find_by_idempotency_key(idempotency_key)
+            existing = self._find_existing(idempotency_key)
             if existing is not None:
                 return AnalysisDraft.from_dict(existing)
 
@@ -137,5 +140,22 @@ class AnalysisService:
             save_payload = draft.to_dict()
             save_payload["theme"] = theme
             save_payload["input"] = payload.to_dict()
-            self._repository.save_success(idempotency_key, save_payload)
+            self._save_success(idempotency_key, save_payload)
         return draft
+
+    def _find_existing(self, idempotency_key: str) -> dict[str, Any] | None:
+        if self._repository is None:
+            return None
+        try:
+            return self._repository.find_by_idempotency_key(idempotency_key)
+        except Exception:
+            logger.exception("Failed to read analysis by idempotency key")
+            return None
+
+    def _save_success(self, idempotency_key: str, payload: dict[str, Any]) -> None:
+        if self._repository is None:
+            return
+        try:
+            self._repository.save_success(idempotency_key, payload)
+        except Exception:
+            logger.exception("Failed to save analysis result")
