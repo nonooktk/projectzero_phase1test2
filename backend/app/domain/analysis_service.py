@@ -124,7 +124,7 @@ class AnalysisService:
         )
         graph_view = self._graph_search.build_graph_view(vector_results)
         context = self._graph_search.build_context(vector_results)
-        llm_analysis = self._llm.evaluate(theme, context, vector_results)
+        llm_analysis = self._evaluate_llm(theme, context, vector_results)
 
         draft = AnalysisDraft(
             analysis_id=str(uuid4()),
@@ -159,3 +159,72 @@ class AnalysisService:
             self._repository.save_success(idempotency_key, payload)
         except Exception:
             logger.exception("Failed to save analysis result")
+
+    def _evaluate_llm(
+        self,
+        theme: str,
+        context: AnalysisContext,
+        vector_results: list[SearchHit],
+    ) -> LLMAnalysis:
+        try:
+            return self._llm.evaluate(theme, context, vector_results)
+        except Exception:
+            logger.exception("Failed to evaluate analysis with LLM")
+            return self._fallback_llm_analysis(context, vector_results)
+
+    @staticmethod
+    def _fallback_llm_analysis(
+        context: AnalysisContext,
+        vector_results: list[SearchHit],
+    ) -> LLMAnalysis:
+        has_external = any(hit.source == "external" for hit in vector_results)
+        has_internal = any(hit.source == "internal" for hit in vector_results)
+        has_org = bool(context.org_context)
+
+        stage1 = {
+            "external": {
+                "score": "○" if has_external else "△",
+                "reason": "関連する外部情報を検索結果から確認した。LLM接続失敗時の暫定評価である。",
+                "key_points": ["市場・規制・競合情報の追加確認が必要"],
+            },
+            "internal": {
+                "score": "○" if has_internal else "△",
+                "reason": "関連する社内情報を検索結果から確認した。LLM接続失敗時の暫定評価である。",
+                "key_points": ["再利用可能な技術・過去PJの詳細確認が必要"],
+            },
+            "org": {
+                "score": "○" if has_org else "△",
+                "reason": "関連ノードから候補キーマンを補完した。LLM接続失敗時の暫定評価である。",
+                "key_points": ["担当候補者へのヒアリングが必要"],
+            },
+        }
+        summary = (
+            "条件付きGO。OpenAI APIへの接続に失敗したため、検索結果と関連ノードに基づく"
+            "暫定評価を表示している。正式判断前にLLM評価を再実行する。"
+        )
+        return LLMAnalysis(
+            stage1=stage1,
+            stage2={
+                "proposals": [
+                    {
+                        "title": "暫定事業仮説の検証",
+                        "summary": "検索結果で見つかった市場情報・社内資産・キーマンを起点に、事業仮説を短期検証する。",
+                        "timing_score": "○",
+                        "timing_reason": "関連市場と既存アセットが確認できるため、初期検証に進める。",
+                        "tech_fit_score": "○",
+                        "tech_fit_reason": "社内情報に関連技術・過去事業の接点がある。",
+                        "bottleneck": "LLM評価が未完了",
+                        "bottleneck_solution": "OpenAI接続を復旧後、同じ入力で再分析する。",
+                        "next_actions": [
+                            {
+                                "person": "事業開発担当",
+                                "action": "検索根拠と関連ノードを確認し、検証論点を整理する。",
+                            }
+                        ],
+                    }
+                ],
+                "approver_summary": summary,
+            },
+            go_no_verdict="条件付きGO（LLM接続失敗のため暫定評価）",
+            approver_summary=summary,
+        )

@@ -107,3 +107,26 @@ def test_analysis_service_returns_saved_result_for_same_key() -> None:
 
     assert result.analysis_id == "saved-id"
     assert result.summary == "保存済み"
+
+
+def test_analysis_service_returns_fallback_when_llm_fails() -> None:
+    class BrokenLLM:
+        def evaluate(self, theme, context, search_results) -> LLMAnalysis:
+            raise RuntimeError("openai unavailable")
+
+    service = AnalysisService(
+        FakeVectorSearch(),
+        FakeGraphSearch(),
+        BrokenLLM(),
+        None,
+    )
+
+    result = service.start(
+        AnalysisInput("BEMS市場", "薄膜太陽電池", "省エネ管理SaaS"),
+        idempotency_key="idem-1",
+    )
+
+    assert result.status == "evaluated"
+    assert result.llm_analysis is not None
+    assert result.llm_analysis.go_no_verdict.startswith("条件付きGO")
+    assert "OpenAI API" in result.summary
