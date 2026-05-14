@@ -6,6 +6,7 @@ from dataclasses import asdict
 from pathlib import Path
 from typing import Any
 
+import httpx
 from openai import OpenAI
 
 from app.domain.prompts import (
@@ -60,10 +61,16 @@ class OpenAILLMAdapter(LLMPort):
     ) -> None:
         if not api_key:
             raise RuntimeError("OPENAI_API_KEY is required for LLM evaluation")
+        http_client = httpx.Client(
+            timeout=httpx.Timeout(timeout_seconds),
+            trust_env=False,
+            http2=False,
+        )
         self._client = OpenAI(
             api_key=api_key,
             timeout=timeout_seconds,
             max_retries=max_retries,
+            http_client=http_client,
         )
         self._model = model
         self._data_dir = data_dir or Path(__file__).resolve().parents[3] / "data"

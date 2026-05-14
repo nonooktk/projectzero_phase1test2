@@ -24,12 +24,19 @@ def openai_health() -> dict[str, object]:
         return {**result, "ok": False, "error_type": "MissingOpenAIKey"}
 
     try:
+        import httpx
         from openai import OpenAI
 
+        http_client = httpx.Client(
+            timeout=httpx.Timeout(settings.openai_timeout_seconds),
+            trust_env=False,
+            http2=False,
+        )
         client = OpenAI(
             api_key=key,
             timeout=settings.openai_timeout_seconds,
             max_retries=settings.openai_max_retries,
+            http_client=http_client,
         )
         response = client.chat.completions.create(
             model=settings.openai_model,
