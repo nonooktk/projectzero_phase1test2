@@ -10,6 +10,10 @@ class Settings(BaseSettings):
     supabase_url: str = ""
     supabase_service_role_key: str = ""
     vector_search_backend: str = "simple"
+    enable_supabase_save: bool = True
+    enable_idempotency: bool = True
+    openai_timeout_seconds: float = 45.0
+    openai_max_retries: int = 2
 
     model_config = SettingsConfigDict(env_file=("../.env", ".env"), extra="ignore")
 

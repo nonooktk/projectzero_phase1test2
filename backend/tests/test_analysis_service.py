@@ -130,3 +130,23 @@ def test_analysis_service_returns_fallback_when_llm_fails() -> None:
     assert result.llm_analysis is not None
     assert result.llm_analysis.go_no_verdict.startswith("条件付きGO")
     assert "OpenAI API" in result.summary
+
+
+def test_analysis_service_skips_repository_when_disabled() -> None:
+    repo = FakeRepository()
+    service = AnalysisService(
+        FakeVectorSearch(),
+        FakeGraphSearch(),
+        FakeLLM(),
+        repo,
+        enable_idempotency=False,
+        enable_repository_save=False,
+    )
+
+    result = service.start(
+        AnalysisInput("BEMS市場", "薄膜太陽電池", "省エネ管理SaaS"),
+        idempotency_key="idem-1",
+    )
+
+    assert result.status == "evaluated"
+    assert repo.saved is None

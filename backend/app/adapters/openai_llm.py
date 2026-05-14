@@ -28,6 +28,26 @@ AXIS_CONTEXT_KEYS = {
     "org": "org_context",
 }
 
+SCORE_NORMALIZE = {
+    "◎": "◎",
+    "○": "○",
+    "〇": "○",
+    "◯": "○",
+    "△": "△",
+    "▲": "△",
+    "×": "×",
+    "✕": "×",
+    "✖": "×",
+    "ｘ": "×",
+    "Ｘ": "×",
+    "x": "×",
+    "X": "×",
+    "－": "－",
+    "-": "－",
+    "—": "－",
+    "ー": "－",
+}
+
 
 class OpenAILLMAdapter(LLMPort):
     def __init__(
@@ -35,10 +55,16 @@ class OpenAILLMAdapter(LLMPort):
         api_key: str,
         model: str = "gpt-4o-mini",
         data_dir: Path | None = None,
+        timeout_seconds: float = 45.0,
+        max_retries: int = 2,
     ) -> None:
         if not api_key:
             raise RuntimeError("OPENAI_API_KEY is required for LLM evaluation")
-        self._client = OpenAI(api_key=api_key)
+        self._client = OpenAI(
+            api_key=api_key,
+            timeout=timeout_seconds,
+            max_retries=max_retries,
+        )
         self._model = model
         self._data_dir = data_dir or Path(__file__).resolve().parents[3] / "data"
 
@@ -69,7 +95,7 @@ class OpenAILLMAdapter(LLMPort):
                 axis_name=AXIS_NAMES[axis],
                 context=self._escape(raw_context),
             )
-            return axis, self._call_json(STAGE1_SYSTEM_PROMPT, prompt)
+            return axis, self._normalize_axis(self._call_json(STAGE1_SYSTEM_PROMPT, prompt))
 
         with ThreadPoolExecutor(max_workers=3) as executor:
             return dict(executor.map(call_axis, AXIS_CONTEXT_KEYS))
@@ -134,6 +160,7 @@ class OpenAILLMAdapter(LLMPort):
                 {"role": "user", "content": user_prompt},
             ],
             response_format={"type": "json_object"},
+            temperature=0,
         )
         content = response.choices[0].message.content or "{}"
         return json.loads(content)
@@ -192,6 +219,19 @@ class OpenAILLMAdapter(LLMPort):
         if external_score in ("△", "×"):
             return "条件付きGO（外部環境スコアが低いため、市場変化を確認しながら進める）"
         return "GO（全軸スコアが◎○のため即時推進可）"
+
+    @classmethod
+    def _normalize_axis(cls, raw: dict[str, Any]) -> dict[str, Any]:
+        return {
+            **raw,
+            "score": cls._normalize_score(str(raw.get("score", ""))),
+            "key_points": raw.get("key_points", []) or [],
+            "reason": raw.get("reason", ""),
+        }
+
+    @staticmethod
+    def _normalize_score(value: str) -> str:
+        return SCORE_NORMALIZE.get(value.strip(), "－")
 
     @staticmethod
     def _escape(value: str) -> str:

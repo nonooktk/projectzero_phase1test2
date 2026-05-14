@@ -20,3 +20,11 @@ services:
         value: http://localhost:3000
       - key: VECTOR_SEARCH_BACKEND
         value: simple
+      - key: ENABLE_SUPABASE_SAVE
+        value: "false"
+      - key: ENABLE_IDEMPOTENCY
+        value: "false"
+      - key: OPENAI_TIMEOUT_SECONDS
+        value: "45"
+      - key: OPENAI_MAX_RETRIES
+        value: "2"

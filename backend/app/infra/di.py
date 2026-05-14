@@ -25,9 +25,17 @@ def get_analysis_service() -> AnalysisService:
         llm=OpenAILLMAdapter(
             api_key=settings.openai_api_key,
             model=settings.openai_model,
+            timeout_seconds=settings.openai_timeout_seconds,
+            max_retries=settings.openai_max_retries,
         ),
-        repository=SupabaseAnalysisRepository(
-            url=settings.supabase_url,
-            service_role_key=settings.supabase_service_role_key,
+        repository=(
+            SupabaseAnalysisRepository(
+                url=settings.supabase_url,
+                service_role_key=settings.supabase_service_role_key,
+            )
+            if settings.enable_supabase_save or settings.enable_idempotency
+            else None
         ),
+        enable_idempotency=settings.enable_idempotency,
+        enable_repository_save=settings.enable_supabase_save,
     )

@@ -100,11 +100,15 @@ class AnalysisService:
         graph_search: GraphSearchPort,
         llm: LLMPort,
         repository: AnalysisRepositoryPort | None = None,
+        enable_idempotency: bool = True,
+        enable_repository_save: bool = True,
     ) -> None:
         self._vector_search = vector_search
         self._graph_search = graph_search
         self._llm = llm
         self._repository = repository
+        self._enable_idempotency = enable_idempotency
+        self._enable_repository_save = enable_repository_save
 
     def start(
         self,
@@ -112,7 +116,7 @@ class AnalysisService:
         idempotency_key: str,
         n_results: int = 5,
     ) -> AnalysisDraft:
-        if self._repository is not None:
+        if self._repository is not None and self._enable_idempotency:
             existing = self._find_existing(idempotency_key)
             if existing is not None:
                 return AnalysisDraft.from_dict(existing)
@@ -136,7 +140,7 @@ class AnalysisService:
             context=context,
             llm_analysis=llm_analysis,
         )
-        if self._repository is not None:
+        if self._repository is not None and self._enable_repository_save:
             save_payload = draft.to_dict()
             save_payload["theme"] = theme
             save_payload["input"] = payload.to_dict()
