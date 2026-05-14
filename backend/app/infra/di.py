@@ -38,4 +38,5 @@ def get_analysis_service() -> AnalysisService:
         ),
         enable_idempotency=settings.enable_idempotency,
         enable_repository_save=settings.enable_supabase_save,
+        enable_llm_fallback=settings.enable_llm_fallback,
     )

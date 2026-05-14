@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     vector_search_backend: str = "simple"
     enable_supabase_save: bool = True
     enable_idempotency: bool = True
+    enable_llm_fallback: bool = True
     openai_timeout_seconds: float = 45.0
     openai_max_retries: int = 2
 

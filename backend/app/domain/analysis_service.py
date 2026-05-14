@@ -102,6 +102,7 @@ class AnalysisService:
         repository: AnalysisRepositoryPort | None = None,
         enable_idempotency: bool = True,
         enable_repository_save: bool = True,
+        enable_llm_fallback: bool = True,
     ) -> None:
         self._vector_search = vector_search
         self._graph_search = graph_search
@@ -109,6 +110,7 @@ class AnalysisService:
         self._repository = repository
         self._enable_idempotency = enable_idempotency
         self._enable_repository_save = enable_repository_save
+        self._enable_llm_fallback = enable_llm_fallback
 
     def start(
         self,
@@ -174,6 +176,8 @@ class AnalysisService:
             return self._llm.evaluate(theme, context, vector_results)
         except Exception:
             logger.exception("Failed to evaluate analysis with LLM")
+            if not self._enable_llm_fallback:
+                raise
             return self._fallback_llm_analysis(context, vector_results)
 
     @staticmethod

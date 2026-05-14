@@ -51,6 +51,6 @@ def create_analysis(
         logger.exception("Analysis request failed")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Analysis failed: {exc.__class__.__name__}",
+            detail=f"Analysis failed: {exc.__class__.__name__}: {exc}",
         ) from exc
     return AnalysisResponse(**draft.to_dict())
